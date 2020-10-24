@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        /* flex-direction定义了弹性项目在(弹性容器中!!!)的放置方向，
+        默认是row，即行内方向
+        （一般而言是由左往右，但注意这个和书写模式有关）。 
+        在子元素内都设置flex-direction:row是不起效果的，
+        必须在它们的父级元素样式内设置display:flex;
+        */
+        #z-layout-flex{
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+        }
+        #z-left-flex,#z-center-flex,#z-center-flex{
+            height: 100%;
+        }
+        #z-left-flex{
+            width: 33.3%;
+            background: red;
+        }
+        #z-center-flex{
+            width: 33.4%; /*加0.1%，让页面不留空隙*/
+            background: green;
+        }
+        #z-right-flex{
+            width: 33.3%;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="z-layout-flex">
+      <div id="z-left-flex"></div>
+      <div id="z-center-flex"></div>
+      <div id="z-right-flex"></div>
+    </div>
+</body>
+</html>

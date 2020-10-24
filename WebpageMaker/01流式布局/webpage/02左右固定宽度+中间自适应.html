@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* start 左右固定宽度+中间自适应基础设置 */
+        html,body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #z-layout{
+            height: 100%;
+        }
+        /* end 左右固定宽度+中间自适应基础设置 */
+        /* 左右固定宽度+中间自适应注意：
+        设置左右栏浮动的时候
+        中间的z-center必须放置于z-right后面，
+        指的不是样式而是body内的标签，
+        否则z-center会跑到下面，
+        如下所示：
+        <div id="z-layout">
+            <div id="z-left-fixed"></div>
+            <div id="z-right"></div>
+            <div id="z-center"></div>
+        </div>
+         */
+        #z-left-fixed{
+            float: left;
+            width: 200px;
+            height: 100%;
+            background: #eee;
+        }
+        #z-center{
+            height: 100%;
+            background:#ccc;
+        }
+        #z-right-fixed{
+            float: right;
+            width: 200px;
+            height: 100%;
+            background: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div id="z-layout">
+        <div id="z-left-fixed"></div>
+        <div id="z-right-fixed"></div>
+        <div id="z-center"></div>
+    </div>
+</body>
+</html>

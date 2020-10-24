@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* start 左侧固定+右侧自适应的前提设置 */
+        html,body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #z-layout{
+            height: 100%;
+        }
+        /* end 左侧固定+右侧自适应的前提设置*/
+        /* 左侧固定 */
+        #z-left-fixed{
+            /* float: left; */
+            /* float和position都可以 */
+            position: absolute;
+            width: 200px;
+            height: 100%;
+            background: #eee;
+        }
+        /* 右侧自适应 */
+        #z-right-self-adaption{
+            height: 100%;
+            background: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div id="z-layout">
+        <div id="z-left-fixed"></div>
+        <div id="z-right-self-adaption"></div>
+    </div>
+</body>
+</html>

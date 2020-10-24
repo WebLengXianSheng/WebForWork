@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: orange;
+        }
+        /* 最小的宽度设置max-width,后面的全部设置min-width */
+        /* 谷歌浏览器水平宽度普通情况下缩小最小到500px就不能再小了,
+        所以max-width设置为500px才可以*/
+        /* 宽度设置 */
+        @media screen and (max-width: 200px){body{background-color: white;}}
+        @media screen and (min-width: 300px){body{background-color: silver;}}
+        @media screen and (min-width: 400px){body{background-color: gray;}}
+        @media screen and (min-width: 500px){body{background-color: black;}}
+        @media screen and (min-width: 600px){body{background-color: red;}}
+        @media screen and (min-width: 700px){body{background-color: maroon;}}
+        @media screen and (min-width: 800px){body{background-color: yellow;}}
+        @media screen and (min-width: 900px){body{background-color: olive;}}
+        @media screen and (min-width: 1000px){body{background-color: lime;}}
+        @media screen and (min-width: 1100px){body{background-color: green;}}
+        @media screen and (min-width: 1200px){body{background-color: aqua;}}
+        @media screen and (min-width: 1300px){body{background-color: teal;}}
+        @media screen and (min-width: 1400px){body{background-color: blue;}}
+        @media screen and (min-width: 1500px){body{background-color: navy;}}
+        @media screen and (min-width: 1600px){body{background-color: fuchsia;}}
+        @media screen and (min-width: 1700px){body{background-color: purple;}}
+
+        /* 高度设置 */
+        /* 通常浏览器去掉标签导航栏的高度不过1000px */
+        @media screen and (max-height: 100px){body{background-color: white;}}
+        @media screen and (min-height: 200px){body{background-color: bisque;}}
+        @media screen and (min-height: 300px){body{background-color: silver;}}
+        @media screen and (min-height: 400px){body{background-color: gray;}}
+        @media screen and (min-height: 500px){body{background-color: black;}}
+        @media screen and (min-height: 600px){body{background-color: red;}}
+        @media screen and (min-height: 700px){body{background-color: maroon;}}
+        @media screen and (min-height: 800px){body{background-color: yellow;}}
+        @media screen and (min-height: 900px){body{background-color: olive;}}
+    </style>
+</head>
+<body>
+    <input type="button" onclick="resize_window()" value="查看效果">
+    <script>
+        function resize_window(){
+            window.open('http://127.0.0.1:5500/03%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/webpage/01%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2.html','newwindow','height=100,width=100,top=0,left=0,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no')
+        }
+    </script>
+</body>
+</html>

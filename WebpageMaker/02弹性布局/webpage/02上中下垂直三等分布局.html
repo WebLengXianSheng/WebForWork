@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        /*  上中下因为div为块级元素，占据一行，
+        所以只需要设置上中下的高度为总高度三分之一就行,
+        正常上中下顺序可以不设置flex,
+        当然也可以设置
+            display: flex;
+            flex-direction: column; 
+        看需要,
+        想要反方向只需要设置父级元素z-layout的样式中有
+            display: flex;
+            flex-direction: column-reverse;
+        */
+        #z-layout{
+            height: 100%;
+            /* 
+            display: flex;
+            flex-direction: column; 
+            */
+            /* 
+            display: flex;
+            flex-direction: column-reverse; 
+            */
+        }
+        #z-up-flex{
+            height: 33.3%;           
+            background: red;
+        }
+        #z-center-flex-column{
+            height: 33.4%;
+            background: green;
+        }
+        #z-down-flex{
+            height: 33.3%;     
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="z-layout">
+      <div id="z-up-flex"></div>
+      <div id="z-center-flex-column"></div>
+      <div id="z-down-flex"></div>
+    </div>
+</body>
+</html>

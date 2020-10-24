@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!-- 
+        name="viewport" 指视口
+
+        width=device-width——宽度等于当前设备的宽度
+
+        initial-scale=1.0——初始的缩放比例（默认为1）
+
+        maximum-scale=1.0——允许用户缩放到得最大比例（默认为1）
+
+        user-scalable=no——用户不能手动缩放
+     -->
+     <!-- 谷歌浏览器上各式手机分辨率显示
+        Responsive:        响应的          400x803
+        Moto G4:           摩托罗拉 G4     360x640
+        Galaxy S5:         三星手机        360x640
+        Pixel 2:           谷歌手机        411x731
+        Pixel 2 XL:        谷歌手机        411x823
+        iPhone 5/SE:       苹果手机        320x568
+        iphone 6/7/8:      苹果手机        375x667
+        iphone 6/7/8 Plus: 苹果手机        414x736
+        iPhone X:          苹果手机        375x812
+        iPad:              苹果平板        768x1024
+        iPad Pro:          苹果平板        1024x1366
+        Surface Due:       微软手机(双屏)        540x720
+        Galaxy Fold:       三星手机(可折叠)280x653
+    -->
+    <!-- 
+       <=767px    手机
+       >=768px    平板
+       >=992px    电脑
+       >=1200px  大显示器
+     -->
+    <title>Document</title>
+    <style>
+        @media screen and (max-height: 767px){body{background: red;}}
+        @media screen and (min-height: 768px){body{background: green;}}
+        @media screen and (min-height: 992px){body{background: blue;}}
+        @media screen and (min-height: 1200px){body{background: cyan;}}
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
